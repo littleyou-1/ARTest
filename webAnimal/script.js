@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 }, 1000)
 
 /* document.querySelector('model-viewer').addEventListener('progress', onProgress);
-butFront.addEventListener('click', function() {
+butFronst.addEventListener('click', function() {
   butBack.click();
 }); */
 
