@@ -24,7 +24,7 @@ document.querySelector('model-viewer').addEventListener('progress', onProgress);
 butFront.addEventListener('click', function() {
   butBack.click();
   alert("Hello");
-  FrontPage.style.display="none";
+  FrontPage.style.display = 'none';
 });
 /* document.querySelector('model-viewer').addEventListener('progress', onProgress);
 butFront.addEventListener('click', function() {
