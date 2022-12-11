@@ -31,8 +31,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
   butFront.addEventListener('click', function() {
     butBack.click();
   });
+  butFront.click();
+  setTimeout(function(){
+    FrontPage.style.display = 'none';
+}, 2000) // 5000 msec = 5 sec
 
-  FrontPage.style.display = 'none';
 });
 /* document.querySelector('model-viewer').addEventListener('progress', onProgress);
 butFront.addEventListener('click', function() {
