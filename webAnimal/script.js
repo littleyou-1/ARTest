@@ -21,10 +21,8 @@ const onProgress = (event) => {
   }
 };
 
-document.querySelector('model-viewer').addEventListener('progress', onProgress);
-butFront.addEventListener('click', function() {
 
-});
+
 document.addEventListener('DOMContentLoaded', (event) => {
   butFront.addEventListener('click', function() {
     butBack.click();
@@ -32,6 +30,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
       FrontPage.style.display = 'none';
   }, 2000) // 5000 msec = 5 sec  
   });
+  butFront.click();
+});
+document.querySelector('model-viewer').addEventListener('progress', onProgress);
+butFront.addEventListener('click', function() {
   butFront.click();
 });
 /* document.querySelector('model-viewer').addEventListener('progress', onProgress);
