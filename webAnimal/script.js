@@ -25,7 +25,7 @@ const onProgress = (event) => {
 
 document.addEventListener('DOMContentLoaded', (event) => {
   butFront.addEventListener('click', function() {
-    butBack.click();
+    butBack.active();
     document.querySelector('model-viewer').activateAR();
     setTimeout(function(){
       FrontPage.style.display = 'none';
