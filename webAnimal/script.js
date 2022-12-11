@@ -28,7 +28,9 @@ butFront.addEventListener('click', function() {
   FrontPage.style.display = 'none';
 });
 document.addEventListener('DOMContentLoaded', (event) => {
-  butBack.click();
+  butFront.addEventListener('click', function() {
+    butBack.click();
+  });
   alert("Hello");
   FrontPage.style.display = 'none';
 });
