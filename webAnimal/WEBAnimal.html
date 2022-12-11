@@ -24,6 +24,7 @@
             
             <model-viewer src="assets/animalModel.glb" 
             camera-controls 
+            id="modelviw"
             autoPlay = true
             autoplay
             reveal="auto" 
@@ -67,12 +68,7 @@
   <script src="script.js"></script>
   <script>
 
-    document.addEventListener('DOMContentLoaded', function(e){ // ждем окончание загрузки
-      setTimeout(function(){
-            let myElement = document.getElementById('ar-button') // ищем нужный элемент
-            myElement.click() // клик!
-        }, 0) // 5000 msec = 5 sec
-    })
+
     
     </script>
 </body>
