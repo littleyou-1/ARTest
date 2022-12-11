@@ -20,8 +20,14 @@ const onProgress = (event) => {
     }
   }
 };
+
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
 butFront.addEventListener('click', function() {
+  butBack.click();
+  alert("Hello");
+  FrontPage.style.display = 'none';
+});
+document.addEventListener('DOMContentLoaded', (event) => {
   butBack.click();
   alert("Hello");
   FrontPage.style.display = 'none';
