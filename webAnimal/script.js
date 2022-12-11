@@ -24,7 +24,6 @@ const onProgress = (event) => {
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
 butFront.addEventListener('click', function() {
   butBack.click();
-  FrontPage.style.display = 'none';
 });
 document.addEventListener('DOMContentLoaded', (event) => {
   butFront.addEventListener('click', function() {
