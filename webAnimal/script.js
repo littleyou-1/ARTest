@@ -25,8 +25,8 @@ const onProgress = (event) => {
 
 document.addEventListener('DOMContentLoaded', (event) => {
   butFront.addEventListener('click', function() {
-    butBack.active();
-    document.querySelector('model-viewer').activateAR();
+    butBack.click();
+    document.querySelector('#modelviw').activateAR();
     setTimeout(function(){
       FrontPage.style.display = 'none';
   }, 2000) // 5000 msec = 5 sec  
