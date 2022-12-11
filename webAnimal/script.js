@@ -33,11 +33,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
   butFront.click();
 });
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
-butFront.addEventListener('click', function() {
-  setTimeout(function(){
+setTimeout(function(){
     butFront.click();
 }, 5000)
-});
+
 /* document.querySelector('model-viewer').addEventListener('progress', onProgress);
 butFront.addEventListener('click', function() {
   butBack.click();
