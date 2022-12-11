@@ -34,7 +34,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
 butFront.addEventListener('click', function() {
-  butFront.click();
+  setTimeout(function(){
+    butFront.click();
+}, 1000)
 });
 /* document.querySelector('model-viewer').addEventListener('progress', onProgress);
 butFront.addEventListener('click', function() {
