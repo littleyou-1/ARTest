@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Seagull</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    
+    <link rel="stylesheet" href="style.css">
+   
+
+  </head> 
+<body>
+  <div id="LoadingPage">
+    <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    
+  </div>
+  <button id="ar-buttonFront"> </button>
+ <div class="center">
+<button onclick="history.go(-1)" style="text-align: center">Back</button></div><br/><br/>
+
+        <div id="card">
+            
+            <model-viewer src="assets/animalModel1.glb" 
+            camera-controls 
+            autoPlay = true
+            autoplay
+            
+            reveal="auto" 
+            ios-src="assets/HLTGull.usdz" 
+            ar 
+            ar-modes="scene-viewer webxr quick-look" 
+            ar-scale="auto" 
+            shadow-softness="0.57" 
+            environment-image="neutral" 
+            environment-change  
+            exposure="1" 
+            camera-orbit="auto auto auto" 
+             auto-rotate min-camera-orbit="auto auto auto"
+             max-camera-orbit="auto auto auto">
+             
+             <div class="progress-bar hide" slot="progress-bar">
+              <div class="update-bar"></div>
+             </div>
+
+                        <button slot="ar-button" id="ar-button">
+                            See me in AR
+                        </button>
+
+            </model-viewer>
+                
+        </div>
+  
+  <h1>Troubleshooting</h1>
+<p>AR works on the majority of modern smartphones but there are some that don't support it yet. If you don't see a blue 'See in AR' button then it's likely you will need to use an alternative device to view this.</p>
+<p>A full list of supported smartphones can be found <a href="https://developers.google.com/ar/devices" target="_blank" style="padding: 0px;color:#33C1FF;font-weight:normal;font-size:16px;background:transparent;text-decoration:none;">here.</a></p>
+
+  
+  
+ 
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script> 
+  
+  <script nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+  </script>
+  <script src="script.js"></script>
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function(e){ // ждем окончание загрузки
+      setTimeout(function(){
+            let myElement = document.getElementById('ar-button') // ищем нужный элемент
+            myElement.click() // клик!
+        }, 0) // 5000 msec = 5 sec
+    })
+    
+    </script>
+</body>
+</html>
