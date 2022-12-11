@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   butFront.click();
   setTimeout(function(){
     FrontPage.style.display = 'none';
-}, 2000) // 5000 msec = 5 sec
+}, 4000) // 5000 msec = 5 sec
 
 });
 /* document.querySelector('model-viewer').addEventListener('progress', onProgress);
