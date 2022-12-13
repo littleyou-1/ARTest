@@ -25,15 +25,14 @@ const onProgress = (event) => {
 
 document.addEventListener('DOMContentLoaded', (event) => {
   butFront.addEventListener('click', function() {
-    butBack.click();
-    document.getElementById('modelviw').activateAR();
     setTimeout(function(){
+      butBack.click();
       FrontPage.style.display = 'none';
   }, 4000) // 5000 msec = 5 sec  
   });
 
-  setTimeout(function(){
-    butBack.click();
+setTimeout(function(){
+    butFront.click();
 }, 2000)
 
 });
