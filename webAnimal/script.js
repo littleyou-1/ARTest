@@ -31,16 +31,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
       FrontPage.style.display = 'none';
   }, 4000) // 5000 msec = 5 sec  
   });
-  butFront.click();
-});
-document.addEventListener('DOMContentLoaded', (event) => {
+
   setTimeout(function(){
     butFront.click();
 }, 2000)
-});
 
-/* document.querySelector('model-viewer').addEventListener('progress', onProgress);
-butFronst.addEventListener('click', function() {
-  butBack.click();
-}); */
+});
 
