@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
   setTimeout(function(){
-    butFront.click();
+    butBack.click();
 }, 1000)
 
 /* document.querySelector('model-viewer').addEventListener('progress', onProgress);
