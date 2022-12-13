@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   });
 
   setTimeout(function(){
-    butFront.click();
+    butBack.click();
 }, 2000)
 
 });
