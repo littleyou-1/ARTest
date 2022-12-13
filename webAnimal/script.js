@@ -26,18 +26,18 @@ const onProgress = (event) => {
 document.addEventListener('DOMContentLoaded', (event) => {
   butFront.addEventListener('click', function() {
     butBack.click();
-     document.getElementById('modelviw').activateAR();
+    document.getElementById('modelviw').activateAR();
     setTimeout(function(){
       FrontPage.style.display = 'none';
-  }, 2000) // 5000 msec = 5 sec  
+  }, 4000) // 5000 msec = 5 sec  
   });
   butFront.click();
 });
-
-
+document.addEventListener('DOMContentLoaded', (event) => {
   setTimeout(function(){
-    butBack.click();
-}, 1000)
+    butFront.click();
+}, 2000)
+});
 
 /* document.querySelector('model-viewer').addEventListener('progress', onProgress);
 butFronst.addEventListener('click', function() {
