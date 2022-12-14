@@ -27,6 +27,7 @@ const onProgress = (event) => {
 document.addEventListener('DOMContentLoaded', (event) => {
  MV.addEventListener('load', function () { 
     MV.activateAR(); 
+    FrontPage.style.display = 'none';
 });
 });
   /* butFront.addEventListener('click', function() {
