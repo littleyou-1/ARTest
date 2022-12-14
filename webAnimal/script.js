@@ -1,6 +1,7 @@
 let butFront = document.querySelector('#ar-buttonFront');
 let butBack = document.querySelector('#ar-button');
 let FrontPage = document.querySelector('#LoadingPage');
+let MV = document.getElementById('modelviw')
 
 // Handles loading the events for <model-viewer>'s slotted progress bar
 const onProgress = (event) => {
@@ -24,8 +25,8 @@ const onProgress = (event) => {
 
 
 document.addEventListener('DOMContentLoaded', (event) => {
-  document.getElementById('modelviw').addEventListener('load', function () { 
-    modelViewer.activateAR(); 
+ MV.addEventListener('load', function () { 
+    MV.activateAR(); 
 });
 });
   /* butFront.addEventListener('click', function() {
