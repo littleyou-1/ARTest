@@ -24,16 +24,34 @@ const onProgress = (event) => {
 
 
 document.addEventListener('DOMContentLoaded', (event) => {
-  butFront.addEventListener('click', function() {
+  document.getElementById('modelviw').addEventListener('load', function () { 
+    modelViewer.activateAR(); 
+});
+});
+  /* butFront.addEventListener('click', function() {
+    butBack.click();
+    document.getElementById('modelviw').activateAR();
     setTimeout(function(){
-      butBack.click();
       FrontPage.style.display = 'none';
   }, 4000) // 5000 msec = 5 sec  
   });
+  var modelViewer = document.getElementById('model-viewer');
+  modelViewer.addEventListener('load', function () { 
+      modelViewer.activateAR(); 
+  }); */
 
-setTimeout(function(){
+
+/*   setTimeout(function(){
     butFront.click();
 }, 2000)
 
-});
+}); */
+
+
+
+
+/* document.querySelector('model-viewer').addEventListener('progress', onProgress);
+butFront.addEventListener('click', function() {
+  butBack.click();
+}); */
 
