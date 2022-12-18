@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
    /*  MV.activateAR();  */
     butBack.click();
     butBack.style.display = 'block';
+    butBack.classList.add('show');
     setTimeout(() => {
       FrontPage.style.display = 'none';
     }, 2000);
