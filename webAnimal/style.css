@@ -36,23 +36,22 @@ model-viewer {
 }
 #ar-buttonFront{
   background-repeat: no-repeat;
-  background-size: 20px 20px;
+  background-size: 1px 1px;
   background-position: 12px 50%;
   background-color: #fff;
   position: absolute;
   z-index: 5;
   left: 50%;
-  top: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
-  bottom: 16px;
+  bottom: 1px;
   padding: 0px 16px 0px 40px;
   font-family: Roboto Regular, Helvetica Neue, sans-serif;
   font-size: 14px;
   color:#ffffff;
-  height: 36px;
-  line-height: 36px;
-  border-radius: 18px;
+  height: 1px;
+  line-height: 1px;
+  border-radius: 1px;
   border: 1px solid #ffffff;
   display: block;
 }
