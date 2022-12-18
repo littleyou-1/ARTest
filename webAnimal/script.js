@@ -26,8 +26,12 @@ const onProgress = (event) => {
 
 document.addEventListener('DOMContentLoaded', (event) => {
  MV.addEventListener('load', function () { 
-    MV.activateAR(); 
-    FrontPage.style.display = 'none';
+   /*  MV.activateAR();  */
+    butBack.click();
+    setTimeout(() => {
+      FrontPage.style.display = 'none';
+    }, 2000);
+    
 });
 });
   /* butFront.addEventListener('click', function() {
