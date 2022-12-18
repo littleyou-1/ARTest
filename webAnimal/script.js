@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     butBack.classList.add('show');
     setTimeout(() => {
       FrontPage.style.display = 'none';
-    }, 2000);
+    }, 4000);
     
 });
 });
