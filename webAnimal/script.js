@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
  MV.addEventListener('load', function () { 
    /*  MV.activateAR();  */
     butBack.click();
+    butBack.style.display = 'block';
     setTimeout(() => {
       FrontPage.style.display = 'none';
     }, 2000);
