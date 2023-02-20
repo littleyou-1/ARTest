@@ -1,0 +1,285 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.0.0/dist/mindar-image.prod.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.0.0/dist/mindar-image-aframe.prod.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+ 
+    
+
+  </head>
+  <body>
+    
+    
+    <div class="viewer-container">
+      <div class="pre-start">
+          <div class="innerr">
+            <div>The scene is loaded</div>
+            <button id="paintandquest-preview-button" >START</button>
+          </div>
+      </div>
+  </div>
+  <div class="logo-container">
+    <div class="logo-pre-start">
+        <div class="logo-innerr">
+         <img src="./assets/Marker.png" style="width: 70%; height: 70%;">
+         <button id="paintandquest-loading-button" >Loading ...</button>
+        </div>
+    </div>
+  </div>
+ 
+
+    <div class="example-container">
+        <div id="example-scanning-overlay" class="hidden">
+            <div class="inner">
+                   <img src="./assets/Marker.png"/>      
+            </div>
+         </div>
+    </div>
+        
+        
+          <a-scene  mindar-image="imageTargetSrc: target/targets.mind;" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+          <a-assets>
+            
+               <video id="paintandquest-video-mp4" autoplay="false" loop="false" src="./assets/example 1.mp4"></video>
+              <!--  <a-asset-item id="BtnPhoto" src="./assets/model/button/button.gltf"></a-asset-item>
+               <a-asset-item id="list1" src="./assets/list/l1.gltf"></a-asset-item>
+               <a-asset-item id="list2" src="./assets/list/l2.gltf"></a-asset-item>
+               <a-asset-item id="list3" src="./assets/list/l3.gltf"></a-asset-item>
+               <a-asset-item id="list4" src="./assets/list/l4.gltf"></a-asset-item>
+               <a-asset-item id="list5" src="./assets/list/l5.gltf"></a-asset-item>
+               <a-asset-item id="list6" src="./assets/list/l6.gltf"></a-asset-item>
+               <a-asset-item id="list7" src="./assets/list/l7.gltf"></a-asset-item>
+               <a-asset-item id="list8" src="./assets/list/l8.gltf"></a-asset-item>
+               <a-asset-item id="list9" src="./assets/list/l9.gltf"></a-asset-item>
+               <a-asset-item id="list10" src="./assets/list/l10.gltf"></a-asset-item>
+               <a-asset-item id="list11" src="./assets/list/l11.gltf"></a-asset-item>
+               <a-asset-item id="list12" src="./assets/list/l12.gltf"></a-asset-item>
+              
+               <a-asset-item id="list14" src="./assets/list/l14.gltf"></a-asset-item>
+               <a-asset-item id="list15" src="./assets/list/l15.gltf"></a-asset-item>
+               <a-asset-item id="list16" src="./assets/list/l16.gltf"></a-asset-item>
+               <a-asset-item id="list17" src="./assets/list/l17.gltf"></a-asset-item>
+               <a-asset-item id="list18" src="./assets/list/l18.gltf"></a-asset-item>
+               <a-asset-item id="list19" src="./assets/list/l19.gltf"></a-asset-item>
+               <a-asset-item id="list20" src="./assets/list/l20.gltf"></a-asset-item>
+               <a-asset-item id="list21" src="./assets/list/l21.gltf"></a-asset-item> -->
+
+
+               
+               
+              
+              
+            </a-assets>
+
+            <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: 10000; objects: .clickable"></a-camera>
+            
+
+            
+            <a-entity id="mytarget" mindar-image-target="targetIndex: 0"  >
+              
+
+              <a-entity>
+                <a-gltf-model 
+                id='Model1'
+                rotation="90 0 0" 
+                position="0 0 0.1" 
+                scale="0.3 0.3 0.3" 
+                src="#list1">
+              </a-entity>
+
+              <a-entity>
+                <a-gltf-model 
+                id='Model2'
+                rotation="90 0 0" 
+                position="0 0 0" 
+                scale="0.3 0.3 0.3"    
+                src="#list2">
+              </a-entity>
+
+              <a-entity>
+                <a-gltf-model 
+                id='Model3'
+                rotation="90 0 0" 
+                position="0 0 0"  
+                scale="0.3 0.3 0.3" 
+                src="#list3">
+              </a-entity>
+
+              <a-entity>
+                <a-gltf-model 
+                id='Model4'
+                rotation="90 0 0" 
+                position="0 0 0"   
+                scale="0.3 0.3 0.3"    
+                src="#list4">
+              </a-entity>
+
+              <a-entity>
+                <a-gltf-model 
+                id='Model5'
+                rotation="90 0 0" 
+                position="0 0 0"  
+                scale="0.3 0.3 0.3" 
+                src="#list5">
+              </a-entity>
+
+              <a-entity>
+                <a-gltf-model 
+                id='Model6'
+                rotation="90 0 0" 
+                position="0 0 0"  
+                scale="0.3 0.3 0.3" 
+                src="#list6">
+              </a-entity>
+
+              <a-entity>
+                <a-gltf-model 
+                id='Model7'
+                rotation="90 0 0" 
+                position="0 0 0"  
+                scale="0.3 0.3 0.3" 
+                src="#list7">
+              </a-entity>
+
+              <a-entity>
+                <a-gltf-model 
+                id='Model8'
+                rotation="90 0 0" 
+                position="0 0 0"  
+                scale="0.3 0.3 0.3" 
+                src="#list8">
+              </a-entity>
+
+              <a-entity>
+                <a-gltf-model 
+                id='Model9'
+                rotation="90 0 0" 
+                position="0 0 0"  
+                scale="0.3 0.3 0.3" 
+                src="#list9">
+              </a-entity>
+
+              <a-entity>
+                <a-gltf-model 
+                id='Model10'
+                rotation="90 0 0" 
+                position="0 0 0"  
+                scale="0.3 0.3 0.3" 
+                src="#list10">
+              </a-entity>
+
+              <a-entity>
+                <a-gltf-model 
+                id='Model11'
+                rotation="90 0 0" 
+                position="0 0 0"  
+                scale="0.3 0.3 0.3" 
+                src="#list11">
+              </a-entity>
+
+              <a-entity>
+                <a-gltf-model 
+                id='Model12'
+                rotation="90 0 0" 
+                position="0 0 0"  
+                scale="0.3 0.3 0.3" 
+                src="#list12">
+              </a-entity>
+
+              <a-entity>
+                <a-gltf-model 
+                id='Model14'
+                rotation="90 0 0" 
+                position="0 0 0"  
+                scale="0.3 0.3 0.3" 
+                src="#list14">
+              </a-entity>
+
+              <a-entity>
+                <a-gltf-model 
+                id='Model15'
+                rotation="90 0 0" 
+                position="0 0 0"  
+                scale="0.3 0.3 0.3" 
+                src="#list15">
+              </a-entity>
+
+              <a-entity>
+                <a-gltf-model 
+                id='Model16'
+                rotation="90 0 0" 
+                position="0 0 0"  
+                scale="0.3 0.3 0.3" 
+                src="#list16">
+              </a-entity>
+
+              <a-entity>
+                <a-gltf-model 
+                id='Model17'
+                rotation="90 0 0" 
+                position="0 0 0"  
+                scale="0.3 0.3 0.3" 
+                src="#list17">
+              </a-entity>
+
+              <a-entity>
+                <a-gltf-model 
+                id='Model18'
+                rotation="90 0 0" 
+                position="0 0 0"  
+                scale="0.3 0.3 0.3" 
+                src="#list18">
+              </a-entity>
+
+              <a-entity>
+                <a-gltf-model 
+                id='Model19'
+                rotation="90 0 0" 
+                position="0 0 0"  
+                scale="0.3 0.3 0.3" 
+                src="#list19">
+              </a-entity>
+
+              <a-entity>
+                <a-gltf-model 
+                id='Model20'
+                rotation="90 0 0" 
+                position="0 0 0"  
+                scale="0.3 0.3 0.3" 
+                src="#list20">
+              </a-entity>
+
+              <a-entity>
+                <a-gltf-model 
+                id='Model21'
+                rotation="90 0 0" 
+                position="0 0 0"  
+                scale="0.3 0.3 0.3" 
+                src="#list21">
+              </a-entity>
+
+
+
+
+              <a-entity id="portfolio-item0">
+            
+                
+              </a-entity>
+              <a-gltf-model class="clickable" id="Btn" rotation="0 0 0 " position="0 -0.4 0.1" scale="1 1 1" src="#BtnPhoto" ></a-gltf-model>
+              
+              <a-entity id="paintandquest-video-link" position="0 0 0.1" rotation="0 0 0 "  geometry="primitive: plane; width: 1; height:0.6" material="src: #paintandquest-video-mp4"></a-entity>
+              
+
+            </a-entity> 
+            
+
+        </a-scene>
+    
+  <script src="js/script.js"></script>
+ 
+  </body>
+</html>
