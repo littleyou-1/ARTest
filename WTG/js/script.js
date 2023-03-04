@@ -136,6 +136,8 @@ let track = 1;
             });
 
       BSoPl.addEventListener("click", event => {
+            const testVideo = document.createElement( "video" );
+            const canplayWebm = testVideo.canPlayType( 'video/webm; codecs="vp8, vorbis"' );
             document.querySelector("#paintandquest-video-mp42").play();
             document.querySelector("#paintandquest-video-mp4").play();
             BSoPl.setAttribute("visible", false);
