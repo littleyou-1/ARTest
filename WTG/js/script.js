@@ -140,16 +140,16 @@ let track = 1;
             const canplayWebm = testVideo.canPlayType( 'video/webm; codecs="vp8, vorbis"' );
             if (canplayWebm == "") {
 
-                  document.querySelector("#paintandquest-video-link").setAttribute("src", "#paintandquest-video-mp4");
-                  document.querySelector("#paintandquest-video-mp4").play();
-                  document.querySelector("#paintandquest-video-mp4").pause();
-                  Bar.style.display = "none"; 
+                  document.querySelector("#paintandquest-video-link2").setAttribute("src", "#paintandquest-video-mp42");
+                  document.querySelector("#paintandquest-video-mp42").play();
+                  document.querySelector("#paintandquest-video-mp42").pause();
+
                 } else {
               
-                   document.querySelector("#paintandquest-video-link").setAttribute("src", "#paintandquest-video-webm");
+                   document.querySelector("#paintandquest-video-link2").setAttribute("src", "#paintandquest-video-webm");
                   document.querySelector("#paintandquest-video-webm").play();
                   document.querySelector("#paintandquest-video-webm").pause();
-                  Bar.style.display = "none"; 
+
                 }
             document.querySelector("#paintandquest-video-mp42").play();
             document.querySelector("#paintandquest-video-mp4").play();
