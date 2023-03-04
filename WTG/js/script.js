@@ -138,6 +138,19 @@ let track = 1;
       BSoPl.addEventListener("click", event => {
             const testVideo = document.createElement( "video" );
             const canplayWebm = testVideo.canPlayType( 'video/webm; codecs="vp8, vorbis"' );
+            if (canplayWebm == "") {
+
+                  document.querySelector("#paintandquest-video-link").setAttribute("src", "#paintandquest-video-mp4");
+                  document.querySelector("#paintandquest-video-mp4").play();
+                  document.querySelector("#paintandquest-video-mp4").pause();
+                  Bar.style.display = "none"; 
+                } else {
+              
+                   document.querySelector("#paintandquest-video-link").setAttribute("src", "#paintandquest-video-webm");
+                  document.querySelector("#paintandquest-video-webm").play();
+                  document.querySelector("#paintandquest-video-webm").pause();
+                  Bar.style.display = "none"; 
+                }
             document.querySelector("#paintandquest-video-mp42").play();
             document.querySelector("#paintandquest-video-mp4").play();
             BSoPl.setAttribute("visible", false);
