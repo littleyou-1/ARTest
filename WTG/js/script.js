@@ -137,7 +137,7 @@ document.querySelector("#paintandquest-video-mp42").pause();
 
       BSoPl.addEventListener("click", event => {
             document.querySelector("#paintandquest-video-mp42").play();
-            document.querySelector("#paintandquest-video-mp4").play();
+            document.querySelector("#paintandquest-video-link2").play();
             BSoPl.setAttribute("visible", false);
             BSOf.setAttribute("visible", true);
             BPLay.setAttribute("visible", false);
