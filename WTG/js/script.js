@@ -21,7 +21,7 @@ const BPLay = document.querySelector('#BpLay');
 const PickInfo = document.querySelector('#INSlide');
 const InfoEx = document.querySelector('#ExInf');
 let track = 1;
-document.querySelector("#paintandquest-video-mp42").pause();
+/* document.querySelector("#paintandquest-video-mp42").pause(); */
 
 /* document.querySelector("#paintandquest-video-mp4").pause(); */
 
@@ -137,7 +137,7 @@ document.querySelector("#paintandquest-video-mp42").pause();
 
       BSoPl.addEventListener("click", event => {
             document.querySelector("#paintandquest-video-mp42").play();
-            document.querySelector("#paintandquest-video-link2").play();
+            document.querySelector("#paintandquest-video-mp4").play();
             BSoPl.setAttribute("visible", false);
             BSOf.setAttribute("visible", true);
             BPLay.setAttribute("visible", false);
