@@ -21,9 +21,10 @@ const BPLay = document.querySelector('#BpLay');
 const PickInfo = document.querySelector('#INSlide');
 const InfoEx = document.querySelector('#ExInf');
 let track = 1;
+let trackSt = 0;
 /* document.querySelector("#paintandquest-video-mp42").pause(); */
 
-document.querySelector("#paintandquest-video-mp4").pause(); 
+ document.querySelector("#paintandquest-video-mp4").pause(); 
 
 /* paintandquestPreviewButton.addEventListener('click', () => {
         paintandquestPreviewButton.setAttribute("visible", false);
@@ -153,6 +154,7 @@ document.querySelector("#paintandquest-video-mp4").pause();
                 }
             document.querySelector("#paintandquest-video-mp42").play(); */
             document.querySelector("#paintandquest-video-mp4").play();
+            trackSt = 1;
 /*             BSoPl.setAttribute("visible", false);
             BSOf.setAttribute("visible", true); */
             BPLay.setAttribute("visible", false);
@@ -187,10 +189,14 @@ document.querySelector("#paintandquest-video-mp4").pause();
       }); */
 
       myTarget3.addEventListener("targetFound", event => {
-            document.querySelector("#paintandquest-video-mp4").play();
-           
-
+            if (trackSt == 1) {
+                  document.querySelector("#paintandquest-video-mp4").play();
+            } else {
+                  console.log('white');
+            }
+            
             })
+
             myTarget.addEventListener("targetFound", event => {
                   if (track == 6) {
                         BtE.setAttribute("visible", false); 
