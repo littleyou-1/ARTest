@@ -23,7 +23,7 @@ const InfoEx = document.querySelector('#ExInf');
 let track = 1;
 /* document.querySelector("#paintandquest-video-mp42").pause(); */
 
-/* document.querySelector("#paintandquest-video-mp4").pause(); */
+document.querySelector("#paintandquest-video-mp4").pause(); 
 
 /* paintandquestPreviewButton.addEventListener('click', () => {
         paintandquestPreviewButton.setAttribute("visible", false);
