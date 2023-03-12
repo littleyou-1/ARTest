@@ -196,7 +196,7 @@ let trackSt4 = 0;
             })
 
             myTarget4.addEventListener("targetFound", event => {
-                  TrPhoto4.style.display = "none"; 
+                  
                   if (trackSt4 == 1) {
                         document.querySelector("#paintandquest-video-mp44").play();
                   } else {
