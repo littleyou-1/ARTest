@@ -60,17 +60,13 @@
   <a href="javascript:history.go(-1)" title="Go back" style="display: inline-block; font-size: 8pt;">Back</a>
 <a href="javascript:void(0)" id="playPauseButton" style="display: inline-block; font-size: 8pt;">
   Audio
-  <img src="assets/playpause.png" alt="Play/Pause" style="vertical-align: middle; height: 8px;">
+  
 </a>
   <a href="https://highstreetsafari.com/ElmersChristmas-P1-Text.html" style="display: inline-block; font-size: 8pt;">Captioned</a>
   <a href="https://highstreetsafari.com/help" style="display: inline-block; font-size: 8pt;">Help</a>
 </div>
 
-<script>
-  document.getElementById("backButton").addEventListener("click", function() {
-    window.history.go(-1);
-  });
-</script>
+
 
   <script>
   const arButton = document.getElementById('ar-button');
@@ -104,8 +100,7 @@ const onProgress = (event) => {
         progressBar.classList.add('hide');
       }
     };
-	document.querySelector('#first').addEventListener('progress', onProgress);
-   	document.querySelector('#second').addEventListener('progress', onProgress);	
+	
 </script>
 </body>
 
