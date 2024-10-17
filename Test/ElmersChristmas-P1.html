@@ -101,6 +101,8 @@ const onProgress = (event) => {
         progressBar.classList.add('hide');
       }
     };
+	document.querySelector('#first').addEventListener('progress', onProgress);
+   	document.querySelector('#second').addEventListener('progress', onProgress);
 </script>
 </body>
 
