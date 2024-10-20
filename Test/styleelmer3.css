@@ -28,9 +28,8 @@ body {
 }
 
 model-viewer {
-  width: 100%;
+  width: 100vw;
   height: 60vh;
-  
   background-color: #26448f;
 }
 
