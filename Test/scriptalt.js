@@ -3,9 +3,14 @@ let butBack = document.querySelector('#ar-button');
 let FrontPage = document.querySelector('#LoadingPage');
 let MV = document.getElementById('modelviw')
 let progressBar = document.getElementById('Barr1');
-/* let updatingBar = document.getElementById('update-bar1'); */
 // Handles loading the events for <model-viewer>'s slotted progress bar
-
+document.addEventListener('DOMContentLoaded', (event) => {
+  MV.addEventListener('load', function () { 
+    /*  MV.activateAR();  */
+    progressBar.style.display = 'none';
+        
+ });
+ });
 
 
 
@@ -20,16 +25,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     
 });
 });
-document.addEventListener('DOMContentLoaded', (event) => {
-  MV.addEventListener('load', function () { 
-    /*  MV.activateAR();  */
-    progressBar.style.display = 'none';
-        
- });
- });
-
-	
-
   /* butFront.addEventListener('click', function() {
     butBack.click();
     document.getElementById('modelviw').activateAR();
@@ -56,3 +51,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
 butFront.addEventListener('click', function() {
   butBack.click();
 }); */
+
