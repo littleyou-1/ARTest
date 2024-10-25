@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Page 1</title>
+  <title>Page 2</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,
@@ -17,12 +17,11 @@
   <img src="assets/Elmer Logo1.png" alt="Elmer's Christmas Logo">
 </div>
 
-	 <audio id="audioElement" src="assets/P1.mp3" loop></audio>
+	 <audio id="audioElement" src="assets/P2.mp3" loop></audio>
 
     <div id="card">
 
       <model-viewer src="assets/ElmersChristmas-S1.glb"
-					
 
                     camera-controls
                     id="modelviw"
@@ -38,7 +37,9 @@
                     auto-rotate min-camera-orbit="auto auto auto"
                     max-camera-orbit="auto auto auto">
 
-                    <div id="Barr1" class="Barr"></div> 
+        <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+        </div>
 
         <button slot="ar-button" id="ar-button">
           Launch AR
@@ -57,10 +58,10 @@
 <div style="display: flex; justify-content: center; gap: 10px;">
   <a href="javascript:history.go(-1)" title="Go back" style="display: inline-block; font-size: 8pt;">Back</a>
 <a href="javascript:void(0)" id="playPauseButton" style="display: inline-block; font-size: 8pt;">
-  Audio
+  Audio Only
   <img src="assets/playpause.png" alt="Play/Pause" style="vertical-align: middle; height: 8px;">
 </a>
-  <a href="https://highstreetsafari.com/ElmersChristmas-P1-Text.html" style="display: inline-block; font-size: 8pt;">Captioned</a>
+  <a href="https://highstreetsafari.com/ElmersChristmas-P2-Text.html" style="display: inline-block; font-size: 8pt;">Captioned</a>
   <a href="https://highstreetsafari.com/help" style="display: inline-block; font-size: 8pt;">Help</a>
 </div>
 
@@ -68,29 +69,25 @@
   document.getElementById("backButton").addEventListener("click", function() {
     window.history.go(-1);
   });
-
-const arButton = document.getElementById('ar-button');
-let audioElement = document.getElementById('audioElement');
-const playPauseButton = document.getElementById('playPauseButton');
-
-function pauseAudio() {
-  if (!audioElement.paused) {
-    audioElement.pause();
-  }
-}
-
-arButton.addEventListener('click', () => {
-  audioElement.play();
-});
-
-playPauseButton.addEventListener('click', () => {
-  if (audioElement.paused) {
-    audioElement.play();
-  } else {
-    audioElement.pause();
-  }})
-
 </script>
+
+  <script>
+    const arButton = document.getElementById('ar-button');
+    const audioElement = document.getElementById('audioElement');
+    const playPauseButton = document.getElementById('playPauseButton');
+
+    arButton.addEventListener('click', () => {
+      audioElement.play();
+    });
+
+    playPauseButton.addEventListener('click', () => {
+      if (audioElement.paused) {
+        audioElement.play();
+      } else {
+        audioElement.pause();
+      }
+    });
+  </script>
 </body>
 
 </html>
