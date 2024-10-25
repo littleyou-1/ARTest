@@ -3,7 +3,7 @@ let butBack = document.querySelector('#ar-button');
 let FrontPage = document.querySelector('#LoadingPage');
 let MV = document.getElementById('modelviw')
 let progressBar = document.getElementById('Barr1');
-const audioElement = document.getElementById("audioElement"); 
+
 // Handles loading the events for <model-viewer>'s slotted progress bar
 document.addEventListener('DOMContentLoaded', (event) => {
   MV.addEventListener('load', function () { 
@@ -45,12 +45,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 }); */
 
-document.addEventListener('visibilitychange', () => {
-    if (document.visibilityState === 'visible') {
-        // Зупиняємо аудіо, коли користувач повертається на сторінку
-        audioElement.pause();
-    }
-});
+
 
 
 /* document.querySelector('model-viewer').addEventListener('progress', onProgress);
