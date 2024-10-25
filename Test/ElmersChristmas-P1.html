@@ -78,12 +78,7 @@ function pauseAudio() {
     audioElement.pause();
   }
 }
-document.addEventListener('visibilitychange', () => {
-    if (document.visibilityState === 'visible') {
-        // Зупиняємо аудіо, коли користувач повертається на сторінку
-        audioElement.pause();
-    }
-});
+
 arButton.addEventListener('click', () => {
   audioElement.play();
 });
