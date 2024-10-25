@@ -87,6 +87,13 @@
         audioElement.pause();
       }
     });
+
+	document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') {
+        // Зупиняємо аудіо, коли користувач повертається на сторінку
+        audioElement.pause();
+    }
+});
   </script>
 </body>
 
