@@ -68,11 +68,9 @@
   document.getElementById("backButton").addEventListener("click", function() {
     window.history.go(-1);
   });
-</script>
 
-  <script>
-  const arButton = document.getElementById('ar-button');
-const audioElement = document.getElementById('audioElement');
+const arButton = document.getElementById('ar-button');
+let audioElement = document.getElementById('audioElement');
 const playPauseButton = document.getElementById('playPauseButton');
 
 function pauseAudio() {
